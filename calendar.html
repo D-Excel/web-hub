@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตารางงาน D-Excel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Prompt', sans-serif;
+      background-color: #0066CC; /* สีพื้นหลังเข้มขึ้น */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #fdfeff;
+      margin: 10px 0;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 1400px; /* เพิ่มความกว้างเพื่อให้ช่องแต่ละวันกว้างขึ้นบนจอใหญ่ */
+      height: 800px;
+    }
+    @media (max-width: 768px) {
+      iframe {
+        max-width: 100%;
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>ตารางงาน D-Excel</h1>
+  <iframe 
+    src="https://calendar.google.com/calendar/embed?src=cs.dexcel%40gmail.com&ctz=Asia%2FBangkok"
+    frameborder="0"
+    scrolling="no">
+  </iframe>
+</body>
+</html>
