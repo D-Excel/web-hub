@@ -161,14 +161,6 @@ a.menu-card:hover {
   background: #e2eef8;
 }
 
-footer {
-  padding: 18px 20px 24px;
-  background: var(--brand-blue);
-  color: rgba(255, 255, 255, 0.72);
-  text-align: center;
-  font-size: 12px;
-}
-
 @media (max-width: 950px) {
   .menu-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
