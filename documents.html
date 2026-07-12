@@ -8,25 +8,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
-  <link rel="icon" type="image/png" sizes="192x192" href="icona.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="iconi.png">
+  <link rel="icon" type="image/png" href="icona.png">
 
   <style>
     :root {
       --brand-blue: #0866b2;
-      --brand-blue-dark: #004c99;
-      --brand-orange: #ff6600;
-      --page-bg: #f4f6f8;
+      --brand-blue-dark: #00549a;
       --card-bg: #ffffff;
-      --text-dark: #1f2937;
-      --text-muted: #6b7280;
-      --border: #e5e7eb;
+      --text-dark: #172033;
     }
 
     * {
@@ -36,57 +30,46 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background: var(--page-bg);
+      background: var(--brand-blue);
       color: var(--text-dark);
       font-family: "Noto Sans Thai", sans-serif;
     }
 
-    .topbar {
-      background: var(--brand-blue);
-      color: #ffffff;
-    }
-
-    .topbar-inner {
+    header {
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 24px 22px;
+      padding: 26px 22px 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      gap: 20px;
     }
 
-    .heading h1 {
+    header h1 {
       margin: 0;
+      color: #ffffff;
       font-size: 30px;
       font-weight: 700;
     }
 
-    .heading p {
-      margin: 6px 0 0;
-      color: #dbeafe;
-      font-size: 15px;
-    }
-
     .logo {
-      width: 210px;
-      max-height: 90px;
+      width: 190px;
+      max-height: 85px;
       object-fit: contain;
-      object-position: right center;
     }
 
     main {
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 34px 22px 60px;
+      padding: 20px 22px 55px;
     }
 
     .back-link {
-      display: inline-flex;
-      margin-bottom: 24px;
-      color: var(--brand-blue);
+      display: inline-block;
+      margin-bottom: 22px;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 600;
       text-decoration: none;
@@ -94,22 +77,6 @@
 
     .back-link:hover {
       text-decoration: underline;
-    }
-
-    .intro {
-      margin-bottom: 24px;
-    }
-
-    .intro h2 {
-      margin: 0;
-      color: var(--brand-orange);
-      font-size: 21px;
-    }
-
-    .intro p {
-      margin: 6px 0 0;
-      color: var(--text-muted);
-      font-size: 14px;
     }
 
     .menu-grid {
@@ -120,98 +87,74 @@
 
     .menu-card {
       min-height: 210px;
-      padding: 28px;
+      padding: 28px 22px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
       background: var(--card-bg);
       color: var(--text-dark);
-      border: 1px solid var(--border);
       border-radius: 16px;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
-      text-decoration: none;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+      text-align: center;
     }
 
     .menu-card.disabled {
-      background: #f9fafb;
-      cursor: not-allowed;
-      opacity: 0.75;
+      opacity: 0.68;
+      cursor: default;
     }
 
     .icon-box {
-      width: 58px;
-      height: 58px;
+      width: 64px;
+      height: 64px;
+      margin-bottom: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 15px;
+      border-radius: 16px;
       background: #fff3e8;
-      font-size: 29px;
+      font-size: 32px;
     }
 
-    .menu-content {
-      margin-top: 25px;
-    }
-
-    .menu-content h3 {
+    .menu-card h2 {
       margin: 0;
-      font-size: 20px;
+      font-size: 21px;
       font-weight: 700;
-    }
-
-    .menu-content p {
-      margin: 8px 0 0;
-      color: var(--text-muted);
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .status {
-      margin-top: 22px;
-      color: var(--brand-orange);
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .future-note {
-      margin-top: 24px;
-      padding: 17px 20px;
-      background: #fff7ed;
-      color: #9a3412;
-      border: 1px solid #fed7aa;
-      border-radius: 12px;
-      font-size: 14px;
+      line-height: 1.5;
     }
 
     footer {
       padding: 16px 20px;
       background: var(--brand-blue-dark);
-      color: #cce5ff;
+      color: #ffffff;
       text-align: center;
       font-size: 13px;
     }
 
     @media (max-width: 700px) {
-      .topbar-inner {
-        align-items: flex-start;
-        padding: 20px 16px;
+      header {
+        padding: 20px 16px 8px;
       }
 
-      .heading h1 {
-        font-size: 24px;
+      header h1 {
+        font-size: 23px;
       }
 
       .logo {
         width: 135px;
-        max-height: 70px;
       }
 
       main {
-        padding: 26px 14px 45px;
+        padding: 18px 14px 40px;
       }
 
       .menu-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .menu-card {
+        min-height: 175px;
       }
     }
   </style>
@@ -219,57 +162,23 @@
 
 <body>
 
-  <header class="topbar">
-    <div class="topbar-inner">
-
-      <div class="heading">
-        <h1>งานเอกสารขาย/บริการ</h1>
-        <p>เลือกเอกสารที่ต้องการสร้างหรือดำเนินการ</p>
-      </div>
-
-      <img src="logo.png" alt="D-Excel Logo" class="logo">
-
-    </div>
+  <header>
+    <h1>งานเอกสารขาย/บริการ</h1>
+    <img src="logo.png" alt="D-Excel Logo" class="logo">
   </header>
 
   <main>
 
-    <a href="index.html" class="back-link">
-      ← กลับหน้าหลัก
-    </a>
-
-    <section class="intro">
-      <h2>ระบบสร้างเอกสาร</h2>
-      <p>เมนูในส่วนนี้จะเพิ่มขึ้นตามระบบที่พัฒนาเสร็จแล้ว</p>
-    </section>
+    <a href="index.html" class="back-link">← กลับหน้าหลัก</a>
 
     <section class="menu-grid">
 
       <div class="menu-card disabled">
-
-        <div class="icon-box">
-          🧾
-        </div>
-
-        <div class="menu-content">
-          <h3>สร้างใบเสนอราคา</h3>
-          <p>
-            สร้างใบเสนอราคา เลือกสินค้า คำนวณราคา
-            และจัดทำไฟล์ PDF อัตโนมัติ
-          </p>
-        </div>
-
-        <div class="status">
-          อยู่ระหว่างพัฒนา
-        </div>
-
+        <div class="icon-box">🧾</div>
+        <h2>สร้างใบเสนอราคา</h2>
       </div>
 
     </section>
-
-    <div class="future-note">
-      ระบบนี้สามารถเพิ่มเอกสารขายและเอกสารบริการอื่น ๆ ได้ในอนาคต
-    </div>
 
   </main>
 
@@ -278,7 +187,7 @@
   </footer>
 
   <script>
-    document.getElementById('copyright').textContent =
+    document.getElementById("copyright").textContent =
       `© ${new Date().getFullYear()} D-Excel. All rights reserved.`;
   </script>
 
