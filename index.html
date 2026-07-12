@@ -14,7 +14,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 
   <link rel="icon" type="image/png" sizes="192x192" href="icona.png">
   <link rel="apple-touch-icon" sizes="180x180" href="iconi.png">
@@ -24,35 +24,22 @@
 
   <header class="topbar">
     <div class="topbar-inner">
-
-      <div class="heading">
-        <h1>D-Excel Workplace</h1>
-        <p>ศูนย์รวมระบบงาน ข้อมูล และเอกสารสำหรับพนักงาน</p>
-      </div>
-
       <img src="logo.png" alt="D-Excel Logo" class="logo">
-
     </div>
   </header>
 
   <main>
 
-    <section class="intro">
-      <h2>เมนูระบบงาน</h2>
-      <p>เลือกเมนูที่ต้องการใช้งาน</p>
-    </section>
-
     <section class="menu-grid">
 
-      <a href="calendar.html" class="menu-card">
+      <a
+        href="calendar.html"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src="calendargold.svg" alt="" class="menu-icon">
-
-        <div class="menu-content">
-          <h3>ตารางงาน</h3>
-          <p>ตรวจสอบกำหนดการ นัดหมาย และตารางปฏิบัติงาน</p>
-        </div>
-
-        <div class="open-text">เปิดระบบ →</div>
+        <h2>ตารางงาน</h2>
       </a>
 
       <a
@@ -62,13 +49,7 @@
         rel="noopener noreferrer"
       >
         <img src="archivebrown.svg" alt="" class="menu-icon">
-
-        <div class="menu-content">
-          <h3>ตรวจสอบจำนวนสินค้า</h3>
-          <p>ตรวจสอบจำนวนสินค้าและข้อมูลสินค้าคงเหลือ</p>
-        </div>
-
-        <div class="open-text">เปิดระบบ →</div>
+        <h2>ตรวจสอบจำนวนสินค้า</h2>
       </a>
 
       <a
@@ -78,79 +59,70 @@
         rel="noopener noreferrer"
       >
         <img src="photo.svg" alt="" class="menu-icon">
-
-        <div class="menu-content">
-          <h3>รูปภาพผลงานติดตั้ง</h3>
-          <p>ดูตัวอย่างผลงานและรูปภาพการติดตั้งที่ผ่านมา</p>
-        </div>
-
-        <div class="open-text">เปิดแกลเลอรี →</div>
+        <h2>รูปภาพผลงานติดตั้ง</h2>
       </a>
 
       <div class="menu-card disabled">
         <img src="forwardpurple.svg" alt="" class="menu-icon">
-
-        <div class="menu-content">
-          <h3>ขั้นตอนการทำงาน</h3>
-          <p>คู่มือและขั้นตอนการดำเนินงานของบริษัท</p>
-        </div>
-
-        <div class="status-text">อยู่ระหว่างปรับปรุง</div>
+        <h2>ขั้นตอนการทำงาน</h2>
       </div>
 
-      <a href="sales.html" class="menu-card">
-        <img src="infoblue.svg" alt="" class="menu-icon">
+      <div class="menu-card sales-card">
 
-        <div class="menu-content">
-          <h3>ข้อมูลสำหรับการขาย</h3>
-          <p>รวมข้อมูลสินค้าและข้อมูลสนับสนุนการขาย</p>
-        </div>
+        <a
+          href="https://d-excel.github.io/sales-infomation/"
+          class="main-card-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="infoblue.svg" alt="" class="menu-icon">
+          <h2>ข้อมูลสำหรับการขาย</h2>
+        </a>
 
-        <div class="open-text">เปิดข้อมูล →</div>
-      </a>
+        <a
+          href="https://d-excel.github.io/my-knowledge-hub/"
+          class="old-sales-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ข้อมูลการขายเดิม
+        </a>
+
+      </div>
 
       <div class="menu-card disabled">
         <div class="custom-icon service-icon">🔧</div>
-
-        <div class="menu-content">
-          <h3>ข้อมูลสำหรับบริการติดตั้ง</h3>
-          <p>ข้อมูล เทคนิค และคู่มือสำหรับงานบริการติดตั้ง</p>
-        </div>
-
-        <div class="status-text">อยู่ระหว่างปรับปรุง</div>
+        <h2>ข้อมูลสำหรับบริการติดตั้ง</h2>
       </div>
 
-      <a href="reports.html" class="menu-card">
+      <a
+        href="reports.html"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div class="custom-icon report-icon">📊</div>
-
-        <div class="menu-content">
-          <h3>รายงานพนักงานขาย</h3>
-          <p>กรอกรายงานการเยี่ยมร้านค้าและรายงานรายสัปดาห์</p>
-        </div>
-
-        <div class="open-text">เปิดแบบฟอร์ม →</div>
+        <h2>รายงานพนักงานขาย</h2>
       </a>
 
-      <a href="documents.html" class="menu-card">
+      <a
+        href="documents.html"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div class="custom-icon document-icon">📝</div>
-
-        <div class="menu-content">
-          <h3>งานเอกสารขาย/บริการ</h3>
-          <p>สร้างและดำเนินการเอกสารสำหรับงานขายและบริการ</p>
-        </div>
-
-        <div class="open-text">เปิดระบบ →</div>
+        <h2>งานเอกสารขาย/บริการ</h2>
       </a>
 
-      <a href="archive.html" class="menu-card">
+      <a
+        href="archive.html"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div class="custom-icon archive-icon">🗂️</div>
-
-        <div class="menu-content">
-          <h3>คลังเอกสาร</h3>
-          <p>เปิดโฟลเดอร์ใบเสนอราคา ใบส่งสินค้า และเอกสารสำคัญ</p>
-        </div>
-
-        <div class="open-text">เปิดคลังเอกสาร →</div>
+        <h2>คลังเอกสาร</h2>
       </a>
 
     </section>
