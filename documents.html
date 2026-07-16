@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>งานเอกสารขาย/บริการ | D-Excel Workplace</title>
+  <title>สร้างเอกสารขาย/บริการ | D-Excel Workplace</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
     rel="stylesheet"
@@ -83,6 +84,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
+      align-items: stretch;
     }
 
     .menu-card {
@@ -97,16 +99,26 @@
       border-radius: 16px;
       box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
       text-align: center;
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
-    .menu-card.disabled {
-      opacity: 0.68;
-      cursor: default;
+    .menu-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 13px 28px rgba(0, 0, 0, 0.24);
+    }
+
+    .menu-card:focus-visible {
+      outline: 4px solid rgba(255, 255, 255, 0.75);
+      outline-offset: 4px;
     }
 
     .icon-box {
       width: 64px;
       height: 64px;
+      flex: 0 0 64px;
       margin-bottom: 18px;
       display: flex;
       align-items: center;
@@ -117,10 +129,17 @@
     }
 
     .menu-card h2 {
+      width: 100%;
+      max-width: 430px;
+      min-height: 64px;
       margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 21px;
       font-weight: 700;
       line-height: 1.5;
+      text-wrap: balance;
     }
 
     @media (max-width: 700px) {
@@ -147,6 +166,12 @@
 
       .menu-card {
         min-height: 175px;
+        padding: 24px 18px;
+      }
+
+      .menu-card h2 {
+        min-height: 58px;
+        font-size: 19px;
       }
     }
   </style>
@@ -155,20 +180,61 @@
 <body>
 
   <header>
-    <h1>งานเอกสารขาย/บริการ</h1>
+    <h1>สร้างเอกสารขาย/บริการ</h1>
     <img src="logo.png" alt="D-Excel Logo" class="logo">
   </header>
 
   <main>
 
-    <a href="index.html" class="back-link">← กลับหน้าหลัก</a>
+    <a href="index.html" class="back-link">
+      ← กลับหน้าหลัก
+    </a>
 
     <section class="menu-grid">
 
-      <div class="menu-card disabled">
+      <a
+        href="https://script.google.com/macros/s/AKfycbwkEqqNnB9yRrea4BezmYqJ5VzfbLvDloOHas5J_GUD-8_MnGU-G3hhyTMBNYf9rTPblw/exec"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div class="icon-box">🧾</div>
         <h2>สร้างใบเสนอราคา</h2>
-      </div>
+      </a>
+
+      <a
+        href="https://script.google.com/macros/s/AKfycbwBHlh6bCQ_EWDyjBNK-tEVDeiTF-e_-uiDJWNfMF6C5zMILWO7rNpik8Arzr2r_uZq/exec"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icon-box">📦</div>
+        <h2>
+          สร้างใบเบิกสินค้า / ใบส่งสินค้า / ใบสรุปต้นทุนสินค้าติดตั้ง
+        </h2>
+      </a>
+
+      <a
+        href="https://script.google.com/macros/s/AKfycbxEhYRd_vE5jez4JLSVlo37maGRfcJWkmPgNMWwoXMgVr29P6a3V5PMURSFfvfkHntoaw/exec"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icon-box">🛒</div>
+        <h2>สร้างใบสั่งซื้อ</h2>
+      </a>
+
+      <a
+        href="https://script.google.com/macros/s/AKfycbxQGzjkb0_v0Ch9HRf77jjSwBSqcquk1SOYH8jS-He41WwJ5LIdtuItqUBVxpya4IR3/exec"
+        class="menu-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icon-box">🏪</div>
+        <h2>
+          สร้างใบสรุปสินค้าเข้า-ออกและยอดคงเหลือร้านค้าฝากขาย
+        </h2>
+      </a>
 
     </section>
 
