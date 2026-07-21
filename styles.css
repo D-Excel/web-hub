@@ -201,3 +201,11 @@ a.menu-card:hover {
     font-size: 18px;
   }
 }
+
+.menu-grid > a.menu-card {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
